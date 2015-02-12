@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Todo List</title>
+
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/app.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- container -->
+    <div class="container-fluid">
+        
+        <div class="page-header text-center">
+            <h1>Todo List</h1>
+        </div>
+
+        <div class="row top-row">
+            <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 text-center">
+                <!-- 輸入表單 -->
+                <form role="form">
+                    <input type="text" class="form-control" placeholder="輸入待辦事項...." autofocus required />
+                </form>
+                <!-- 輸入表單 end -->
+                <!-- 工具按鈕 -->
+                <ul class="list-inline">
+                    <li><button class="btn btn-primary">全部(27)</button></li>
+                    <li><button class="btn btn-primary">未完成(12)</button></li>
+                    <li><button class="btn btn-primary">已完成(15)</button></li>
+                    <li><button class="btn btn-danger">清除已完成</button></li>
+                </ul>
+                <!-- 工具按鈕　end -->
+            </div>
+        </div>
+        
+        <!-- 清單 -->
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">
+                        <button type="button" class="btn btn-default btn-check">
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                        <span>買報紙</span>
+                        <button type="button" class="btn btn-default btn-remove pull-right">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </button>
+                    </li>
+                    <li class="list-group-item">
+                        <button type="button" class="btn btn-default btn-check">
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                        <span>改考卷</span>
+                        <button type="button" class="btn btn-default btn-remove pull-right">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </button>
+                    </li>
+                    <li class="list-group-item">
+                        <button type="button" class="btn btn-default btn-check">
+                            <span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                        <span>修電腦</span>
+                        <button type="button" class="btn btn-default btn-remove pull-right">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 清單 end -->
+
+    </div>
+    <!-- container end -->
+
+    <!-- 提示訊息 -->
+    <div class="alert alert-warning alert-dismissible alert-box" role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+        </button>
+        已完成事項清除完成....
+    </div>
+    <!-- 提示訊息 end -->
+
+    <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

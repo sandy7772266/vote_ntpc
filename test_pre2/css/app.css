@@ -1,0 +1,38 @@
+form {
+	margin-bottom: 10px;
+}
+
+.top-row {
+	margin-bottom: 20px;
+}
+
+.btn-check:hover {
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+}
+
+.btn-remove:hover {
+	color: #fff;
+	background-color: #d9534f;
+	border-color: #d43f3a;
+}
+
+.list-group-item-warning > span {
+	text-decoration: line-through;
+}
+
+.alert-box {
+	position: fixed;
+	z-index: 1000;
+	bottom: 20px;
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+	text-align: center;
+}
+
+span.editable-click{
+	border: none;
+	outline: none;
+}
